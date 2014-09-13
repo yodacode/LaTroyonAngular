@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	RewriteRule ^/?$ index.html [QSA,NC,L]
+	RewriteRule ^([a-zA-Z]*)/?([-a-z0-9]*)?$ api/$1.php?param=$2 [QSA,NC,L]
+
+</IfModule>
