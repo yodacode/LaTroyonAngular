@@ -1,0 +1,24 @@
+{
+  "name": "LaTroyonAngular",
+  "version": "0.0.0",
+  "authors": [
+    "yodacode <benjamin.devaublanc@gmail.com>"
+  ],
+  "description": "LaTroyon based on Angularjs",
+  "main": "index.html",
+  "keywords": [
+    "music",
+    "artists",
+    "angular",
+    "electro"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
