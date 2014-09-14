@@ -1,73 +1,295 @@
 /******TRACKS*****/
-/* line 23, ../compass/sass/app.scss */
+/* line 53, ../compass/sass/app.scss */
 .tracks-container {
   overflow: hidden;
   text-align: center;
   padding: 0px;
 }
-/* line 28, ../compass/sass/app.scss */
+/* line 58, ../compass/sass/app.scss */
 .tracks-container .track-thumb.yellow {
   list-style: none;
   display: inline-block;
   margin: 12px 8px;
+  position: relative;
+  overflow: hidden;
+  max-height: 285px;
 }
-/* line 16, ../compass/sass/app.scss */
+/* line 19, ../compass/sass/app.scss */
 .tracks-container .track-thumb.yellow .track-cover {
   width: 230px;
   border: solid 4px #FFE000;
 }
-/* line 31, ../compass/sass/app.scss */
+/* line 24, ../compass/sass/app.scss */
+.tracks-container .track-thumb.yellow .track-title {
+  font-size: 1em;
+  display: block;
+  font-weight: normal;
+  width: 80%;
+  margin: 7px 10% 0px 10%;
+  color: #FFE000;
+}
+/* line 33, ../compass/sass/app.scss */
+.tracks-container .track-thumb.yellow .track-category {
+  color: #ebebeb;
+  font-weight: bold;
+  font-size: 1em;
+  color: #BEBEBE;
+}
+/* line 40, ../compass/sass/app.scss */
+.tracks-container .track-thumb.yellow .btn-play {
+  position: absolute;
+  top: 50%;
+  color: #FFF;
+  background: #FFE000;
+  top: 35%;
+  left: 35%;
+  cursor: pointer;
+  font-size: 1.3em;
+}
+/* line 61, ../compass/sass/app.scss */
 .tracks-container .track-thumb.purple {
   list-style: none;
   display: inline-block;
   margin: 12px 8px;
+  position: relative;
+  overflow: hidden;
+  max-height: 285px;
 }
-/* line 16, ../compass/sass/app.scss */
+/* line 19, ../compass/sass/app.scss */
 .tracks-container .track-thumb.purple .track-cover {
   width: 230px;
   border: solid 4px #6d3ca9;
 }
-/* line 34, ../compass/sass/app.scss */
+/* line 24, ../compass/sass/app.scss */
+.tracks-container .track-thumb.purple .track-title {
+  font-size: 1em;
+  display: block;
+  font-weight: normal;
+  width: 80%;
+  margin: 7px 10% 0px 10%;
+  color: #6d3ca9;
+}
+/* line 33, ../compass/sass/app.scss */
+.tracks-container .track-thumb.purple .track-category {
+  color: #ebebeb;
+  font-weight: bold;
+  font-size: 1em;
+  color: #BEBEBE;
+}
+/* line 40, ../compass/sass/app.scss */
+.tracks-container .track-thumb.purple .btn-play {
+  position: absolute;
+  top: 50%;
+  color: #FFF;
+  background: #6d3ca9;
+  top: 35%;
+  left: 35%;
+  cursor: pointer;
+  font-size: 1.3em;
+}
+/* line 64, ../compass/sass/app.scss */
 .tracks-container .track-thumb.green {
   list-style: none;
   display: inline-block;
   margin: 12px 8px;
+  position: relative;
+  overflow: hidden;
+  max-height: 285px;
 }
-/* line 16, ../compass/sass/app.scss */
+/* line 19, ../compass/sass/app.scss */
 .tracks-container .track-thumb.green .track-cover {
   width: 230px;
   border: solid 4px #85c305;
 }
-/* line 37, ../compass/sass/app.scss */
+/* line 24, ../compass/sass/app.scss */
+.tracks-container .track-thumb.green .track-title {
+  font-size: 1em;
+  display: block;
+  font-weight: normal;
+  width: 80%;
+  margin: 7px 10% 0px 10%;
+  color: #85c305;
+}
+/* line 33, ../compass/sass/app.scss */
+.tracks-container .track-thumb.green .track-category {
+  color: #ebebeb;
+  font-weight: bold;
+  font-size: 1em;
+  color: #BEBEBE;
+}
+/* line 40, ../compass/sass/app.scss */
+.tracks-container .track-thumb.green .btn-play {
+  position: absolute;
+  top: 50%;
+  color: #FFF;
+  background: #85c305;
+  top: 35%;
+  left: 35%;
+  cursor: pointer;
+  font-size: 1.3em;
+}
+/* line 67, ../compass/sass/app.scss */
 .tracks-container .track-thumb.orange {
   list-style: none;
   display: inline-block;
   margin: 12px 8px;
+  position: relative;
+  overflow: hidden;
+  max-height: 285px;
 }
-/* line 16, ../compass/sass/app.scss */
+/* line 19, ../compass/sass/app.scss */
 .tracks-container .track-thumb.orange .track-cover {
   width: 230px;
   border: solid 4px #fb4d22;
 }
+/* line 24, ../compass/sass/app.scss */
+.tracks-container .track-thumb.orange .track-title {
+  font-size: 1em;
+  display: block;
+  font-weight: normal;
+  width: 80%;
+  margin: 7px 10% 0px 10%;
+  color: #fb4d22;
+}
+/* line 33, ../compass/sass/app.scss */
+.tracks-container .track-thumb.orange .track-category {
+  color: #ebebeb;
+  font-weight: bold;
+  font-size: 1em;
+  color: #BEBEBE;
+}
 /* line 40, ../compass/sass/app.scss */
+.tracks-container .track-thumb.orange .btn-play {
+  position: absolute;
+  top: 50%;
+  color: #FFF;
+  background: #fb4d22;
+  top: 35%;
+  left: 35%;
+  cursor: pointer;
+  font-size: 1.3em;
+}
+/* line 70, ../compass/sass/app.scss */
 .tracks-container .track-thumb.blue {
   list-style: none;
   display: inline-block;
   margin: 12px 8px;
+  position: relative;
+  overflow: hidden;
+  max-height: 285px;
 }
-/* line 16, ../compass/sass/app.scss */
+/* line 19, ../compass/sass/app.scss */
 .tracks-container .track-thumb.blue .track-cover {
   width: 230px;
   border: solid 4px #00a2a7;
 }
-/* line 43, ../compass/sass/app.scss */
+/* line 24, ../compass/sass/app.scss */
+.tracks-container .track-thumb.blue .track-title {
+  font-size: 1em;
+  display: block;
+  font-weight: normal;
+  width: 80%;
+  margin: 7px 10% 0px 10%;
+  color: #00a2a7;
+}
+/* line 33, ../compass/sass/app.scss */
+.tracks-container .track-thumb.blue .track-category {
+  color: #ebebeb;
+  font-weight: bold;
+  font-size: 1em;
+  color: #BEBEBE;
+}
+/* line 40, ../compass/sass/app.scss */
+.tracks-container .track-thumb.blue .btn-play {
+  position: absolute;
+  top: 50%;
+  color: #FFF;
+  background: #00a2a7;
+  top: 35%;
+  left: 35%;
+  cursor: pointer;
+  font-size: 1.3em;
+}
+/* line 73, ../compass/sass/app.scss */
 .tracks-container .track-thumb.red {
   list-style: none;
   display: inline-block;
   margin: 12px 8px;
+  position: relative;
+  overflow: hidden;
+  max-height: 285px;
 }
-/* line 16, ../compass/sass/app.scss */
+/* line 19, ../compass/sass/app.scss */
 .tracks-container .track-thumb.red .track-cover {
   width: 230px;
   border: solid 4px #e31819;
+}
+/* line 24, ../compass/sass/app.scss */
+.tracks-container .track-thumb.red .track-title {
+  font-size: 1em;
+  display: block;
+  font-weight: normal;
+  width: 80%;
+  margin: 7px 10% 0px 10%;
+  color: #e31819;
+}
+/* line 33, ../compass/sass/app.scss */
+.tracks-container .track-thumb.red .track-category {
+  color: #ebebeb;
+  font-weight: bold;
+  font-size: 1em;
+  color: #BEBEBE;
+}
+/* line 40, ../compass/sass/app.scss */
+.tracks-container .track-thumb.red .btn-play {
+  position: absolute;
+  top: 50%;
+  color: #FFF;
+  background: #e31819;
+  top: 35%;
+  left: 35%;
+  cursor: pointer;
+  font-size: 1.3em;
+}
+
+/******HERO*****/
+/** Band **/
+/* line 81, ../compass/sass/app.scss */
+.hero {
+  background-repeat: no-repeat;
+  background-position: 0px -200px;
+  background-size: cover;
+  background-color: #000;
+  overflow: hidden;
+  height: 580px;
+  background-position: center 16%;
+  position: relative;
+}
+
+/* line 92, ../compass/sass/app.scss */
+.hero.night {
+  background-image: url("../img/bg-latroyon-hd2.jpg");
+}
+
+/* line 96, ../compass/sass/app.scss */
+.hero.day {
+  background-image: url("../img/bg-latroyon-hd.jpg");
+}
+
+/* line 101, ../compass/sass/app.scss */
+.logo {
+  background-image: url("../img/logo-latroyon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 250px;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 110, ../compass/sass/app.scss */
+.block-search {
+  position: absolute;
+  bottom: 30px;
+  left: 10%;
+  width: 80%;
 }

@@ -1,15 +1,27 @@
+<header class="hero night">
+    <div class="logo"></div>
+<div class="block-search">
+	<form class="form-horizontal" role="form">
+		<div class="form-group form-group-lg">
+			<div class="input-group">
+	    		<input class="form-control" type="text" placeholder="Rechercher... Filtrer..." ng-model="query">
+				<span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+	    	</div>
+		</div>
+	</form>
+</div>
+</header>
 <div class="container-fluid">
 
-<!-- Search: <input ng-model="query">
-Sort by:
-<select ng-model="orderProp">
-  <option value="name">Alphabetical</option>
-  <option value="age">Newest</option>
-</select> -->
-
 <ul class="tracks-container">
-  <li ng-repeat="track in tracks" class="track-thumb {{track.colorClass}}">
-    <img ng-src="{{track.img}}" class="track-cover img-circle"/>
+  <li ng-repeat="track in tracks | filter:query" class="track-thumb {{track.colorClass}}"
+    ng-mouseenter="hover = true"
+    ng-mouseleave="hover = false">
+    <img ng-src="{{track.img}}" class="track-cover img-circle" ng-class="{red: hover}"/>
+    <h3 class="track-title">{{track.name}}</h3>
+    <p class="track-category">{{track.category}}</p>
+
+    <div class="btn btn-play" ng-if="hover">Play <span class="glyphicon glyphicon-play"></span></div>
   </li>
 </ul>
 
