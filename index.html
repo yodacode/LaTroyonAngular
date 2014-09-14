@@ -5,12 +5,16 @@
 	<link rel="stylesheet" type="text/css" href="css/app.css">
 
 	<script src="js/libs/jquery/dist/jquery.js"></script>
-  	<script src="js/libs/angularjs/angular.js"></script>
 
+  	<!-- ANGULARR -->
+  	<script src="js/libs/angularjs/angular.js"></script>
+  	<script src="js/libs/angular-route/angular-route.js"></script>
+  	<!-- controllers -->
+  	<script src="js/app/controllers/trackControllers.js"></script>
   	<!-- app -->
   	<script src="js/app/app.js"></script>
 </head>
-<body>
+<body ng-app="latroyonApp">
 	<h1 class="notification">Hello LaTroyon</h1>
 	<div ng-view></div>
 </body>

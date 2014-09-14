@@ -1,0 +1,16 @@
+<div class="container-fluid">
+
+<!-- Search: <input ng-model="query">
+Sort by:
+<select ng-model="orderProp">
+  <option value="name">Alphabetical</option>
+  <option value="age">Newest</option>
+</select> -->
+
+<ul class="tracks-container">
+  <li ng-repeat="track in tracks" class="track-thumb {{track.colorClass}}">
+    <img ng-src="{{track.img}}" class="track-cover img-circle"/>
+  </li>
+</ul>
+
+</div>

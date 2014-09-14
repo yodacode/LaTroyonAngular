@@ -1,6 +1,73 @@
-/* line 2, ../compass/sass/app.scss */
-.notification {
-  padding: 5px;
-  margin: 5px;
-  background: #F00;
+/******TRACKS*****/
+/* line 23, ../compass/sass/app.scss */
+.tracks-container {
+  overflow: hidden;
+  text-align: center;
+  padding: 0px;
+}
+/* line 28, ../compass/sass/app.scss */
+.tracks-container .track-thumb.yellow {
+  list-style: none;
+  display: inline-block;
+  margin: 12px 8px;
+}
+/* line 16, ../compass/sass/app.scss */
+.tracks-container .track-thumb.yellow .track-cover {
+  width: 230px;
+  border: solid 4px #FFE000;
+}
+/* line 31, ../compass/sass/app.scss */
+.tracks-container .track-thumb.purple {
+  list-style: none;
+  display: inline-block;
+  margin: 12px 8px;
+}
+/* line 16, ../compass/sass/app.scss */
+.tracks-container .track-thumb.purple .track-cover {
+  width: 230px;
+  border: solid 4px #6d3ca9;
+}
+/* line 34, ../compass/sass/app.scss */
+.tracks-container .track-thumb.green {
+  list-style: none;
+  display: inline-block;
+  margin: 12px 8px;
+}
+/* line 16, ../compass/sass/app.scss */
+.tracks-container .track-thumb.green .track-cover {
+  width: 230px;
+  border: solid 4px #85c305;
+}
+/* line 37, ../compass/sass/app.scss */
+.tracks-container .track-thumb.orange {
+  list-style: none;
+  display: inline-block;
+  margin: 12px 8px;
+}
+/* line 16, ../compass/sass/app.scss */
+.tracks-container .track-thumb.orange .track-cover {
+  width: 230px;
+  border: solid 4px #fb4d22;
+}
+/* line 40, ../compass/sass/app.scss */
+.tracks-container .track-thumb.blue {
+  list-style: none;
+  display: inline-block;
+  margin: 12px 8px;
+}
+/* line 16, ../compass/sass/app.scss */
+.tracks-container .track-thumb.blue .track-cover {
+  width: 230px;
+  border: solid 4px #00a2a7;
+}
+/* line 43, ../compass/sass/app.scss */
+.tracks-container .track-thumb.red {
+  list-style: none;
+  display: inline-block;
+  margin: 12px 8px;
+}
+/* line 16, ../compass/sass/app.scss */
+.tracks-container .track-thumb.red .track-cover {
+  width: 230px;
+  border: solid 4px #e31819;
 }
