@@ -1,6 +1,46 @@
-$notif:#F00;
-.notification {
-	padding:5px;	
-	margin:5px;
-	background:$notif;	
+/******TRACKS*****/
+
+$yellow: #FFE000;
+$purple: #6d3ca9;
+$green: #85c305;
+$orange: #fb4d22;
+$blue: #00a2a7;
+$red: #e31819;
+
+@mixin track($color){
+
+	list-style: none;
+	display: inline-block;
+	margin: 12px 8px;
+
+	.track-cover {
+		width: 230px;
+		border: solid 4px $color;
+	}
+
+}
+
+.tracks-container {
+	overflow: hidden;
+	text-align: center;
+	padding: 0px;
+
+	.track-thumb.yellow {
+		@include track($yellow);
+	}
+	.track-thumb.purple {
+		@include track($purple);
+	}
+	.track-thumb.green {
+		@include track($green);
+	}
+	.track-thumb.orange {
+		@include track($orange);
+	}
+	.track-thumb.blue {
+		@include track($blue);
+	}
+	.track-thumb.red {
+		@include track($red);
+	}
 }
