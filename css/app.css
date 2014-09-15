@@ -12,7 +12,7 @@
   margin: 12px 8px;
   position: relative;
   overflow: hidden;
-  max-height: 285px;
+  max-height: 300px;
 }
 /* line 19, ../compass/sass/app.scss */
 .tracks-container .track-thumb.yellow .track-cover {
@@ -53,7 +53,7 @@
   margin: 12px 8px;
   position: relative;
   overflow: hidden;
-  max-height: 285px;
+  max-height: 300px;
 }
 /* line 19, ../compass/sass/app.scss */
 .tracks-container .track-thumb.purple .track-cover {
@@ -94,7 +94,7 @@
   margin: 12px 8px;
   position: relative;
   overflow: hidden;
-  max-height: 285px;
+  max-height: 300px;
 }
 /* line 19, ../compass/sass/app.scss */
 .tracks-container .track-thumb.green .track-cover {
@@ -135,7 +135,7 @@
   margin: 12px 8px;
   position: relative;
   overflow: hidden;
-  max-height: 285px;
+  max-height: 300px;
 }
 /* line 19, ../compass/sass/app.scss */
 .tracks-container .track-thumb.orange .track-cover {
@@ -176,7 +176,7 @@
   margin: 12px 8px;
   position: relative;
   overflow: hidden;
-  max-height: 285px;
+  max-height: 300px;
 }
 /* line 19, ../compass/sass/app.scss */
 .tracks-container .track-thumb.blue .track-cover {
@@ -217,7 +217,7 @@
   margin: 12px 8px;
   position: relative;
   overflow: hidden;
-  max-height: 285px;
+  max-height: 300px;
 }
 /* line 19, ../compass/sass/app.scss */
 .tracks-container .track-thumb.red .track-cover {

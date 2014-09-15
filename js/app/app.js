@@ -1,6 +1,7 @@
 var latroyonApp = angular.module('latroyonApp', [
 	'ngRoute',
 	'trackControllers',
+	'trackServices'
 ]);
 
 latroyonApp.config(['$routeProvider',
@@ -10,6 +11,10 @@ latroyonApp.config(['$routeProvider',
 			templateUrl: 'js/app/partials/tracks-list.html',
 			controller: 'TrackListCtrl'
 		})
+		.when('/phones/:phoneId', {
+        	templateUrl: 'js/app/partials/phone-detail.html',
+        	controller: 'TrackDetailCtrl'
+      	})
 		.otherwise({
 			redirectTo: '/'
 		});
