@@ -54,6 +54,7 @@ $red: #e31819;
 	overflow: hidden;
 	text-align: center;
 	padding: 0px;
+	margin-top: 30px;
 
 	.track-thumb.yellow {
 		@include track($yellow);
@@ -111,5 +112,5 @@ $red: #e31819;
 	position: absolute;
 	bottom: 30px;
 	left: 10%;
-	width: 80%;
+	width: 80%;	
 }

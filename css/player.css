@@ -1,0 +1,112 @@
+/* line 1, ../compass/sass/player.scss */
+.block-player {
+  position: absolute;
+  bottom: 30px;
+  left: 10%;
+  width: 80%;
+}
+/* line 7, ../compass/sass/player.scss */
+.block-player .track-title {
+  text-align: center;
+  margin-bottom: 7px;
+  font-size: 1.3em;
+  color: #FFF;
+}
+
+/* line 15, ../compass/sass/player.scss */
+.block-player .percentage-track .num {
+  margin-right: 5px;
+}
+
+/* line 19, ../compass/sass/player.scss */
+.block-player .progress-bar {
+  width: 100%;
+  height: 12px;
+  background: #f2f1f1;
+  margin-bottom: 3px;
+  border: 1px solid #dfdfdf;
+  box-shadow: 0 0 2px #D5D4D4 inset;
+  position: relative;
+}
+
+/* line 29, ../compass/sass/player.scss */
+.block-player .progress-bar .inner {
+  position: relative;
+  width: 0;
+  height: 100%;
+  background: #239bd6;
+}
+
+/* line 36, ../compass/sass/player.scss */
+.progress-bar .inner {
+  height: 0;
+  width: 0;
+  transition: all 1s ease-out;
+}
+
+/* line 42, ../compass/sass/player.scss */
+.progress-bar-slider .inner {
+  transition: none;
+}
+
+/* line 46, ../compass/sass/player.scss */
+.progress-bar-slider .inner:after {
+  content: " ";
+  width: 5px;
+  height: 14px;
+  background-color: #ccc;
+  position: absolute;
+  right: -2px;
+  top: -2px;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+  margin: 0px;
+}
+
+/* line 60, ../compass/sass/player.scss */
+.progress-slider {
+  opacity: 0;
+  width: 100%;
+  height: 15px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* line 71, ../compass/sass/player.scss */
+.player-controls {
+  padding-top: 20px;
+  text-align: center;
+  color: #FFF;
+  font-size: 1.5em;
+  display: block;
+  position: relative;
+}
+/* line 78, ../compass/sass/player.scss */
+.player-controls .glyphicon {
+  margin: 0 10px 0 10px;
+  cursor: pointer;
+}
+/* line 82, ../compass/sass/player.scss */
+.player-controls .current-time {
+  position: absolute;
+  left: 0px;
+  top: 20px;
+}
+/* line 87, ../compass/sass/player.scss */
+.player-controls .total-time {
+  position: absolute;
+  right: 0px;
+  top: 20px;
+}
+/* line 92, ../compass/sass/player.scss */
+.player-controls .switch-search {
+  position: absolute;
+  right: -59px;
+  font-size: 1.3em;
+  color: #FFF;
+  top: -8px;
+}

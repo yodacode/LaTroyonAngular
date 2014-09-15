@@ -1,28 +1,49 @@
 <header class="hero night">
     <div class="logo"></div>
-<div class="block-search">
-	<form class="form-horizontal" role="form">
-		<div class="form-group form-group-lg">
-			<div class="input-group">
-	    		<input class="form-control" type="text" placeholder="Rechercher... Filtrer..." ng-model="query">
-				<span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
-	    	</div>
+	<div class="block-search" ng-hide="true">
+		<form class="form-horizontal" role="form">
+			<div class="form-group form-group-lg">
+				<div class="input-group">
+		    		<input class="form-control" type="text" placeholder="Rechercher... Filtrer..." ng-model="query">
+					<span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+		    	</div>
+			</div>
+		</form>
+	</div>
+	<div class="block-player" ng-controller="playerCtrl">
+		<div class="track-title">SquareTape#13 by Ali Jamieson - April 2014</div>
+		<!-- <div class="percentage-cur">
+			<span class="num">{{ trackPercent }}%</span>
+		</div>	 -->	
+		<div class="progress-bar progress-bar-slider">
+			<input class="progress-slider" type="range" min="0" max="100" ng-model="trackPercent">
+			<div class="inner" ng-style="{ width: trackPercent + '%' || '0%' }"></div>
 		</div>
-	</form>
-</div>
+		<div class="player-controls">
+			<span class="glyphicon glyphicon-backward"></span>
+			<span class="glyphicon glyphicon-play" ng-click="play()"></span>
+			<span class="glyphicon glyphicon-forward"></span>
+			<div class="current-time">06:12</div>
+			<div class="total-time">12:50</div>			
+			<div class="switch-search">
+				<span class="glyphicon glyphicon-remove"></span>
+			</div>
+		</div>
+	</div>
 </header>
+
 <div class="container-fluid">
 
-<ul class="tracks-container">
+<ul class="tracks-container" ng-controller="TrackListCtrl">
   	<li ng-repeat="track in tracks | filter:query" class="track-thumb {{track.colorClass}}"
     	ng-mouseenter="hover = true"
     	ng-mouseleave="hover = false">
-    
+
     	<img ng-src="{{track.img}}" class="track-cover img-circle" ng-class="{red: hover}"/>
     	<a href="#" class="track-title">{{track.name}}</a>
     	<p class="track-category">{{track.category}}</p>
 
-    	<div class="btn btn-play" ng-if="hover">Play <span class="glyphicon glyphicon-play"></span></div>
+    	<div class="btn btn-play" ng-if="hover" ng-click="setStream(track.stream);">Play <span class="glyphicon glyphicon-play"></span></div>
 	</li>
 </ul>
 

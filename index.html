@@ -3,24 +3,26 @@
 	<title>LaTroyon</title>
 	<link rel="stylesheet" type="text/css" href="js/libs/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/app.css">
+  <link rel="stylesheet" type="text/css" href="css/player.css">
 	<link rel="stylesheet" type="text/css" href="css/animation.css">
 
 	<script src="js/libs/jquery/dist/jquery.js"></script>
 
-  	<!-- ANGULARR -->
-  	<script src="js/libs/angularjs/angular.js"></script>
-    <script src="js/libs/angular-route/angular-route.js"></script>
-  	<script src="js/libs/angular-resource/angular-resource.js"></script>
-    <!-- services -->
-    <script src="js/app/services/trackServices.js"></script>
-  	<!-- controllers -->
-  	<script src="js/app/controllers/trackControllers.js"></script>
-    
+	<!-- ANGULAR -->
+	<script src="js/libs/angularjs/angular.js"></script>
+  <script src="js/libs/angular-route/angular-route.js"></script>
+	<script src="js/libs/angular-resource/angular-resource.js"></script>
+  <!-- services -->
+  <script src="js/app/services/trackServices.js"></script>
+  <script src="js/app/services/playerServices.js"></script>
+	<!-- controllers -->
+  <script src="js/app/controllers/trackControllers.js"></script>
+	<script src="js/app/controllers/playerControllers.js"></script>
 
-  	<!-- app -->
-  	<script src="js/app/app.js"></script>
+	<!-- app -->
+	<script src="js/app/app.js"></script>
 </head>
-<body ng-app="latroyonApp">	
+<body ng-app="latroyonApp">
 	<div ng-view></div>
 </body>
 </html>

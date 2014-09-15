@@ -1,14 +1,14 @@
 var trackControllers = angular.module('trackControllers', []);
 
 
-trackControllers.controller('TrackListCtrl', ['$scope', 'Track', function ($scope, Track) {
+trackControllers.controller('TrackListCtrl', ['$scope', 'Track', 'Player', function ($scope, Track, Player) {
 
   var idColor = 0,
       tracks = {};
 
   var pickColorClass = function () {
     var colors = ['yellow', 'purple', 'green', 'orange', 'blue', 'red'];
-    idColor = colors[(idColor + 1)] ? idColor += 1 : idColor = 0;;
+    idColor = colors[(idColor + 1)] ? idColor += 1 : idColor = 0;
     return colors[idColor];
   };
 
@@ -18,5 +18,10 @@ trackControllers.controller('TrackListCtrl', ['$scope', 'Track', function ($scop
     });
     $scope.tracks = tracks;
   });
+
+  $scope.setStream = function(stream){    
+    Player.setStream(stream);    
+  }
+  
 
 }]);
