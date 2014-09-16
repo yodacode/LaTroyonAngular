@@ -17,10 +17,12 @@ trackControllers.controller('TrackListCtrl', ['$scope', 'Track', 'Player', funct
       track.colorClass = pickColorClass();
     });
     $scope.tracks = tracks;
+    console.log(tracks);
   });
 
-  $scope.setStream = function(stream){    
-    Player.setStream(stream);    
+  $scope.initPlayer = function(trackOptions) {
+    console.log(trackOptions);
+    Player.data = trackOptions;
   }
   
 
