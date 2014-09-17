@@ -6,24 +6,22 @@ trackControllers.controller('TrackListCtrl', ['$scope', 'Track', 'Player', funct
   var idColor = 0,
       tracks = {};
 
-  var pickColorClass = function () {
-    var colors = ['yellow', 'purple', 'green', 'orange', 'blue', 'red'];
-    idColor = colors[(idColor + 1)] ? idColor += 1 : idColor = 0;
-    return colors[idColor];
-  };
+    var pickColorClass = function () {
+        var colors = ['yellow', 'purple', 'green', 'orange', 'blue', 'red'];
+        idColor = colors[(idColor + 1)] ? idColor += 1 : idColor = 0;
+        return colors[idColor];
+    };
 
-  tracks = Track.query(function() {
-    tracks.forEach(function(track) {
-      track.colorClass = pickColorClass();
+    tracks = Track.query(function() {
+        tracks.forEach(function(track) {
+        track.colorClass = pickColorClass();
     });
-    $scope.tracks = tracks;
-    console.log(tracks);
+    $scope.tracks = tracks;    
   });
 
-  $scope.initPlayer = function(trackOptions) {
-    console.log(trackOptions);
-    Player.data = trackOptions;
-  }
+    $scope.initPlayer = function(track) {
+        Player.init(track);
+    }
   
 
 }]);

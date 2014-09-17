@@ -30,7 +30,7 @@
   position: relative;
 	width: 0;
 	height:100%;
-	background: #239bd6; 
+	background: #FFE000; 
 }
 
 .progress-bar .inner {
@@ -95,6 +95,19 @@
     font-size: 1.3em;
     color: #FFF;
     top: -8px;
+  }
+}
+
+.player-loader {
+  position: absolute;
+  color: #FFF;
+  left: 0px;
+  top: 0px;
+  font-size: 1.1em;
+  .loader-text {
+    display: inline-block;
+    text-indent: 10px;    
+    vertical-align: top;
   }
 }
 

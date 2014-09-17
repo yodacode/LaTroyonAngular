@@ -34,7 +34,7 @@
   position: relative;
   width: 0;
   height: 100%;
-  background: #239bd6;
+  background: #FFE000;
 }
 
 /* line 36, ../compass/sass/player.scss */
@@ -109,4 +109,19 @@
   font-size: 1.3em;
   color: #FFF;
   top: -8px;
+}
+
+/* line 101, ../compass/sass/player.scss */
+.player-loader {
+  position: absolute;
+  color: #FFF;
+  left: 0px;
+  top: 0px;
+  font-size: 1.1em;
+}
+/* line 107, ../compass/sass/player.scss */
+.player-loader .loader-text {
+  display: inline-block;
+  text-indent: 10px;
+  vertical-align: top;
 }
