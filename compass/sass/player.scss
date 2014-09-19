@@ -1,6 +1,6 @@
 .block-player {
   position: absolute;
-  bottom: 30px;
+  bottom: 45px;
   left: 10%;
   width: 80%;
 
@@ -71,8 +71,10 @@
 .player-controls {
   padding-top: 20px;
   text-align: center;
+  min-height: 50px;
   color: #FFF;
   font-size: 1.5em;
+  min-height: 50px;
   display: block;
   position: relative;
   .glyphicon {
@@ -99,11 +101,9 @@
 }
 
 .player-loader {
-  position: absolute;
+  text-align: center;
   color: #FFF;
-  left: 0px;
-  top: 0px;
-  font-size: 1.1em;
+  font-size: 0.8em;
   .loader-text {
     display: inline-block;
     text-indent: 10px;    

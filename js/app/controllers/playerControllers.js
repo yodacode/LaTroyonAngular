@@ -5,6 +5,8 @@ playerControllers.controller('playerCtrl', ['$scope', 'Player', function ($scope
 
   	$scope.trackPercent = 0;
   	$scope.isLoading = false;
+  	$scope.currentTime = '00:00';
+  	$scope.totalTime = '00:00';
 
 	$scope.play = function () {
 		Player.play();
@@ -41,12 +43,17 @@ playerControllers.controller('playerCtrl', ['$scope', 'Player', function ($scope
 		$scope.trackPercent = time.trackPercent;
 		$scope.totalTimeSecond = time.totalTimeSecond;
 		$scope.currentTimeSecond = time.currentTimeSecond;
-		$scope.$apply();
+		
+		if (!$scope.$$phase) {
+			$scope.$apply();
+		}			
 	});
 
 	$scope.$on('player:isLoading', function (event, isLoading) {
-		$scope.isLoading = isLoading;
-		$scope.$apply();
+		$scope.isLoading = isLoading;		
+		if (!$scope.$$phase) {
+			$scope.$apply();
+		}
 	});
 
 }]);

@@ -28,6 +28,7 @@ playerServices.factory('Player', [ '$rootScope', function($rootScope) {
 				this.load(function () {
 					that.song.play();
 					that.song.isPlaying = true;
+                    $rootScope.$broadcast('player:isPlaying', true);
 					that.updateTimeLine();
 					console.log('Song is playing...')
 				});
@@ -40,6 +41,8 @@ playerServices.factory('Player', [ '$rootScope', function($rootScope) {
 		pause: function () {
             if (this.song) {
                 this.song.pause();
+                clearInterval(this.intervalTimeline);
+                $rootScope.$broadcast('player:isPlaying', false);
             }
         },
 
@@ -47,6 +50,7 @@ playerServices.factory('Player', [ '$rootScope', function($rootScope) {
             if (this.song) {
                 this.song.currentTime = toTime;
                 this.song.play();
+                this.updateTimeLine();
                 $rootScope.$broadcast('player:isLoading', true);
             }
         },
@@ -74,7 +78,6 @@ playerServices.factory('Player', [ '$rootScope', function($rootScope) {
 
 		updateTimeLine: function () {
             var that = this;
-
             this.intervalTimeline = setInterval(function() {
             	that.track.currentTime = that.song.currentTime;
             	$rootScope.$broadcast('player:updateTimeLine', {

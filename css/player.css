@@ -1,7 +1,7 @@
 /* line 1, ../compass/sass/player.scss */
 .block-player {
   position: absolute;
-  bottom: 30px;
+  bottom: 45px;
   left: 10%;
   width: 80%;
 }
@@ -80,29 +80,31 @@
 .player-controls {
   padding-top: 20px;
   text-align: center;
+  min-height: 50px;
   color: #FFF;
   font-size: 1.5em;
+  min-height: 50px;
   display: block;
   position: relative;
 }
-/* line 78, ../compass/sass/player.scss */
+/* line 80, ../compass/sass/player.scss */
 .player-controls .glyphicon {
   margin: 0 10px 0 10px;
   cursor: pointer;
 }
-/* line 82, ../compass/sass/player.scss */
+/* line 84, ../compass/sass/player.scss */
 .player-controls .current-time {
   position: absolute;
   left: 0px;
   top: 20px;
 }
-/* line 87, ../compass/sass/player.scss */
+/* line 89, ../compass/sass/player.scss */
 .player-controls .total-time {
   position: absolute;
   right: 0px;
   top: 20px;
 }
-/* line 92, ../compass/sass/player.scss */
+/* line 94, ../compass/sass/player.scss */
 .player-controls .switch-search {
   position: absolute;
   right: -59px;
@@ -111,13 +113,11 @@
   top: -8px;
 }
 
-/* line 101, ../compass/sass/player.scss */
+/* line 103, ../compass/sass/player.scss */
 .player-loader {
-  position: absolute;
+  text-align: center;
   color: #FFF;
-  left: 0px;
-  top: 0px;
-  font-size: 1.1em;
+  font-size: 0.8em;
 }
 /* line 107, ../compass/sass/player.scss */
 .player-loader .loader-text {

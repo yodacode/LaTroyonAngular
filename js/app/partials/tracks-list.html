@@ -11,39 +11,37 @@
 		</form>
 	</div>
 	<div class="block-player" ng-controller="playerCtrl">
-		<div class="track-title">{{name}}</div>
-		<div ng-if="isLoading" class="player-loader">
-			<div id="bowlG">
-				<div id="bowl_ringG">
-					<div class="ball_holderG">
-						<div class="ballG">
-
-						</div>
-					</div>
-				</div>
-			</div>
-			<span class="loader-text">Chargement...</span>
-		</div>		
+		<div class="track-title">{{name}}</div>		
 		<div class="progress-bar progress-bar-slider">
 			<input class="progress-slider" type="range" min="0" max="100" step="0.01" ng-model="trackPercent" ng-model="currentTimeSecond" ng-mousedown="pause()" ng-mouseup="resume()">
 			<div class="inner" ng-style="{ width: trackPercent + '%' || '0%' }"></div>
 		</div>
-		<div class="player-controls">
-			<span class="glyphicon glyphicon-backward"></span>
-			<span class="glyphicon glyphicon-play" ng-click="play()"></span>
-			<span class="glyphicon glyphicon-forward"></span>
+		<div class="player-controls">			
 			<div class="current-time">{{currentTime}}</div>
-			<div class="total-time">{{totalTime}}</div>			
+			<div class="total-time">{{totalTime}}</div>
+			<div ng-if="isLoading" class="player-loader">
+				<div id="bowlG">
+					<div id="bowl_ringG">
+						<div class="ball_holderG">
+							<div class="ballG">
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<span class="loader-text">Chargement...</span>
+			</div>
 			<div class="switch-search">
 				<span class="glyphicon glyphicon-remove"></span>
 			</div>
 		</div>
+
 	</div>
 </header>
 
 <div class="container-fluid">
 
-<ul class="tracks-container" ng-controller="TrackListCtrl">	
+<ul class="tracks-container" ng-controller="TrackListCtrl">
   	<li ng-repeat="track in tracks | filter:query" class="track-thumb {{track.colorClass}}"
     	ng-mouseenter="hover = true"
     	ng-mouseleave="hover = false">
