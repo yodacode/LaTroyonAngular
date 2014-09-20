@@ -21,6 +21,7 @@ trackControllers.controller('TrackListCtrl', ['$scope', 'Track', 'Player', funct
 
     $scope.initPlayer = function(track) {
         Player.init(track);
+        $scope.isSearchDisplay = false;        
     }
   
 

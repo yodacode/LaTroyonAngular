@@ -53,6 +53,7 @@ $red: #e31819;
 .tracks-container {
 	overflow: hidden;
 	text-align: center;
+	min-height:900px;
 	padding: 0px;
 	margin-top: 30px;
 
@@ -109,8 +110,11 @@ $red: #e31819;
 }
 
 .block-search {
-	position: absolute;
-	bottom: 30px;
-	left: 10%;
-	width: 80%;	
+	width:80%;
+	margin: 0 auto;
+	padding-top: 25px;
+	.input-group-addon {
+		background: $yellow;
+		color: #FFF;
+	}
 }

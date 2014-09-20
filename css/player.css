@@ -104,22 +104,14 @@
   right: 0px;
   top: 20px;
 }
-/* line 94, ../compass/sass/player.scss */
-.player-controls .switch-search {
-  position: absolute;
-  right: -59px;
-  font-size: 1.3em;
-  color: #FFF;
-  top: -8px;
-}
 
-/* line 103, ../compass/sass/player.scss */
+/* line 96, ../compass/sass/player.scss */
 .player-loader {
   text-align: center;
   color: #FFF;
   font-size: 0.8em;
 }
-/* line 107, ../compass/sass/player.scss */
+/* line 100, ../compass/sass/player.scss */
 .player-loader .loader-text {
   display: inline-block;
   text-indent: 10px;

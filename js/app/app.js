@@ -1,5 +1,6 @@
 var latroyonApp = angular.module('latroyonApp', [
 	'ngRoute',
+	'latroyonAnimations',
 	'trackControllers',	
 	'playerControllers',	
 	'trackServices',

@@ -3,10 +3,11 @@
 .tracks-container {
   overflow: hidden;
   text-align: center;
+  min-height: 900px;
   padding: 0px;
   margin-top: 30px;
 }
-/* line 59, ../compass/sass/app.scss */
+/* line 60, ../compass/sass/app.scss */
 .tracks-container .track-thumb.yellow {
   list-style: none;
   display: inline-block;
@@ -47,7 +48,7 @@
   cursor: pointer;
   font-size: 1.3em;
 }
-/* line 62, ../compass/sass/app.scss */
+/* line 63, ../compass/sass/app.scss */
 .tracks-container .track-thumb.purple {
   list-style: none;
   display: inline-block;
@@ -88,7 +89,7 @@
   cursor: pointer;
   font-size: 1.3em;
 }
-/* line 65, ../compass/sass/app.scss */
+/* line 66, ../compass/sass/app.scss */
 .tracks-container .track-thumb.green {
   list-style: none;
   display: inline-block;
@@ -129,7 +130,7 @@
   cursor: pointer;
   font-size: 1.3em;
 }
-/* line 68, ../compass/sass/app.scss */
+/* line 69, ../compass/sass/app.scss */
 .tracks-container .track-thumb.orange {
   list-style: none;
   display: inline-block;
@@ -170,7 +171,7 @@
   cursor: pointer;
   font-size: 1.3em;
 }
-/* line 71, ../compass/sass/app.scss */
+/* line 72, ../compass/sass/app.scss */
 .tracks-container .track-thumb.blue {
   list-style: none;
   display: inline-block;
@@ -211,7 +212,7 @@
   cursor: pointer;
   font-size: 1.3em;
 }
-/* line 74, ../compass/sass/app.scss */
+/* line 75, ../compass/sass/app.scss */
 .tracks-container .track-thumb.red {
   list-style: none;
   display: inline-block;
@@ -255,7 +256,7 @@
 
 /******HERO*****/
 /** Band **/
-/* line 82, ../compass/sass/app.scss */
+/* line 83, ../compass/sass/app.scss */
 .hero {
   background-repeat: no-repeat;
   background-position: 0px -200px;
@@ -267,17 +268,17 @@
   position: relative;
 }
 
-/* line 93, ../compass/sass/app.scss */
+/* line 94, ../compass/sass/app.scss */
 .hero.night {
   background-image: url("../img/bg-latroyon-hd2.jpg");
 }
 
-/* line 97, ../compass/sass/app.scss */
+/* line 98, ../compass/sass/app.scss */
 .hero.day {
   background-image: url("../img/bg-latroyon-hd.jpg");
 }
 
-/* line 102, ../compass/sass/app.scss */
+/* line 103, ../compass/sass/app.scss */
 .logo {
   background-image: url("../img/logo-latroyon.png");
   background-repeat: no-repeat;
@@ -287,10 +288,14 @@
   height: 100%;
 }
 
-/* line 111, ../compass/sass/app.scss */
+/* line 112, ../compass/sass/app.scss */
 .block-search {
-  position: absolute;
-  bottom: 30px;
-  left: 10%;
   width: 80%;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+/* line 116, ../compass/sass/app.scss */
+.block-search .input-group-addon {
+  background: #FFE000;
+  color: #FFF;
 }

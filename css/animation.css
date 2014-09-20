@@ -1,0 +1,25 @@
+/* line 3, ../compass/sass/animation.scss */
+.animated.ng-enter, .animated.ng-leave {
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+}
+
+/* line 8, ../compass/sass/animation.scss */
+.fliper.ng-enter {
+  -webkit-animation-name: flipInY;
+}
+
+/* line 12, ../compass/sass/animation.scss */
+.fliper.ng-leave {
+  -webkit-animation-name: flipOutY;
+}
+
+/* line 16, ../compass/sass/animation.scss */
+.roll.ng-enter {
+  -webkit-animation-name: bounceInDown;
+}
+
+/* line 20, ../compass/sass/animation.scss */
+.roll.ng-leave {
+  -webkit-animation-name: bounceOutUp;
+}

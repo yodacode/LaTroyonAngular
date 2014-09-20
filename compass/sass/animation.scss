@@ -1,0 +1,22 @@
+@import "compass/css3/animation";
+
+.animated.ng-enter, .animated.ng-leave {
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-fill-mode: both;
+}
+
+.fliper.ng-enter {
+	-webkit-animation-name: flipInY;
+}
+
+.fliper.ng-leave {
+	-webkit-animation-name: flipOutY;
+}
+
+.roll.ng-enter {
+	-webkit-animation-name: bounceInDown;
+}
+
+.roll.ng-leave {
+	-webkit-animation-name: bounceOutUp;
+}

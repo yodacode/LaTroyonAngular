@@ -5,6 +5,7 @@ playerControllers.controller('playerCtrl', ['$scope', 'Player', function ($scope
 
   	$scope.trackPercent = 0;
   	$scope.isLoading = false;
+  	$scope.isPlayerDisplay = false;
   	$scope.currentTime = '00:00';
   	$scope.totalTime = '00:00';
 
@@ -36,6 +37,7 @@ playerControllers.controller('playerCtrl', ['$scope', 'Player', function ($scope
 	 	$scope.name = track.name;
 	 	$scope.totalTime = track.totalTime;
 	 	Player.play();
+	 	$scope.isPlayerDisplay = true;
 	});
 
 	$scope.$on('player:updateTimeLine', function (event, time) {
