@@ -22,13 +22,13 @@ playerServices.factory('Player', [ '$rootScope', function($rootScope) {
 			var that = this;
 
 			this.pause();
+            $rootScope.$broadcast('player:isPlaying', true);
+            
+            if (this.track) {
 
-			if (this.track) {
-
-				this.load(function () {
-					that.song.play();
-					that.song.isPlaying = true;
-                    $rootScope.$broadcast('player:isPlaying', true);
+                this.load(function () {
+                    that.song.play();
+                    that.song.isPlaying = true;
 					that.updateTimeLine();
 					console.log('Song is playing...')
 				});
