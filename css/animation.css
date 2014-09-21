@@ -1,35 +1,51 @@
 /* line 3, ../compass/sass/animation.scss */
 .animated.ng-enter, .animated.ng-leave {
+  -moz-animation-duration: 1s;
   -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -moz-animation-fill-mode: both;
   -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 /* line 8, ../compass/sass/animation.scss */
 .fliper.ng-enter {
+  -moz-animation-name: flipInY;
   -webkit-animation-name: flipInY;
+  animation-name: flipInY;
 }
 
 /* line 12, ../compass/sass/animation.scss */
 .fliper.ng-leave {
+  -moz-animation-name: flipOutY;
   -webkit-animation-name: flipOutY;
+  animation-name: flipOutY;
 }
 
 /* line 16, ../compass/sass/animation.scss */
 .bouncer.ng-enter {
+  -moz-animation-name: bounceInDown;
   -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
 }
 
 /* line 20, ../compass/sass/animation.scss */
 .bouncer.ng-leave {
+  -moz-animation-name: bounceOutUp;
   -webkit-animation-name: bounceOutUp;
+  animation-name: bounceOutUp;
 }
 
 /* line 25, ../compass/sass/animation.scss */
 .zommer.ng-enter {
+  -moz-animation-name: bounceInLeft;
   -webkit-animation-name: bounceInLeft;
+  animation-name: bounceInLeft;
 }
 
 /* line 29, ../compass/sass/animation.scss */
 .zoomer.ng-leave {
+  -moz-animation-name: bounceOutRight;
   -webkit-animation-name: bounceOutRight;
+  animation-name: bounceOutRight;
 }

@@ -1,31 +1,31 @@
 @import "compass/css3/animation";
 
 .animated.ng-enter, .animated.ng-leave {
-	-webkit-animation-duration: 1s;
-	-webkit-animation-fill-mode: both;
+	@include animation-duration(1s);
+	@include animation-fill-mode(both);
 }
 
 .fliper.ng-enter {
-	-webkit-animation-name: flipInY;
+	@include animation-name(flipInY);
 }
 
 .fliper.ng-leave {
-	-webkit-animation-name: flipOutY;
+	@include animation-name(flipOutY);
 }
 
 .bouncer.ng-enter {
-	-webkit-animation-name: bounceInDown;
+	@include animation-name(bounceInDown);
 }
 
 .bouncer.ng-leave {
-	-webkit-animation-name: bounceOutUp;
+	@include animation-name(bounceOutUp);
 }
 
 
 .zommer.ng-enter {
-	-webkit-animation-name: bounceInLeft;
+	@include animation-name(bounceInLeft);
 }
 
 .zoomer.ng-leave {
-	-webkit-animation-name: bounceOutRight;
+	@include animation-name(bounceOutRight);
 }
