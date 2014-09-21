@@ -1,5 +1,18 @@
 /******TRACKS*****/
 /* line 53, ../compass/sass/app.scss */
+.contact-container {
+  min-height: 900px;
+}
+
+/* line 57, ../compass/sass/app.scss */
+.menu-container {
+  text-align: center;
+  width: 50%;
+  margin: 0 20% 0 20%;
+  margin-top: 18px;
+}
+
+/* line 64, ../compass/sass/app.scss */
 .tracks-container {
   overflow: hidden;
   text-align: center;
@@ -7,7 +20,7 @@
   padding: 0px;
   margin-top: 30px;
 }
-/* line 60, ../compass/sass/app.scss */
+/* line 71, ../compass/sass/app.scss */
 .tracks-container .track-thumb.yellow {
   list-style: none;
   display: inline-block;
@@ -48,7 +61,7 @@
   cursor: pointer;
   font-size: 1.3em;
 }
-/* line 63, ../compass/sass/app.scss */
+/* line 74, ../compass/sass/app.scss */
 .tracks-container .track-thumb.purple {
   list-style: none;
   display: inline-block;
@@ -89,7 +102,7 @@
   cursor: pointer;
   font-size: 1.3em;
 }
-/* line 66, ../compass/sass/app.scss */
+/* line 77, ../compass/sass/app.scss */
 .tracks-container .track-thumb.green {
   list-style: none;
   display: inline-block;
@@ -130,7 +143,7 @@
   cursor: pointer;
   font-size: 1.3em;
 }
-/* line 69, ../compass/sass/app.scss */
+/* line 80, ../compass/sass/app.scss */
 .tracks-container .track-thumb.orange {
   list-style: none;
   display: inline-block;
@@ -171,7 +184,7 @@
   cursor: pointer;
   font-size: 1.3em;
 }
-/* line 72, ../compass/sass/app.scss */
+/* line 83, ../compass/sass/app.scss */
 .tracks-container .track-thumb.blue {
   list-style: none;
   display: inline-block;
@@ -212,7 +225,7 @@
   cursor: pointer;
   font-size: 1.3em;
 }
-/* line 75, ../compass/sass/app.scss */
+/* line 86, ../compass/sass/app.scss */
 .tracks-container .track-thumb.red {
   list-style: none;
   display: inline-block;
@@ -256,7 +269,7 @@
 
 /******HERO*****/
 /** Band **/
-/* line 83, ../compass/sass/app.scss */
+/* line 94, ../compass/sass/app.scss */
 .hero {
   background-repeat: no-repeat;
   background-position: 0px -200px;
@@ -268,17 +281,17 @@
   position: relative;
 }
 
-/* line 94, ../compass/sass/app.scss */
+/* line 105, ../compass/sass/app.scss */
 .hero.night {
   background-image: url("../img/bg-latroyon-hd2.jpg");
 }
 
-/* line 98, ../compass/sass/app.scss */
+/* line 109, ../compass/sass/app.scss */
 .hero.day {
   background-image: url("../img/bg-latroyon-hd.jpg");
 }
 
-/* line 103, ../compass/sass/app.scss */
+/* line 114, ../compass/sass/app.scss */
 .logo {
   background-image: url("../img/logo-latroyon.png");
   background-repeat: no-repeat;
@@ -288,14 +301,47 @@
   height: 100%;
 }
 
-/* line 112, ../compass/sass/app.scss */
+/* line 123, ../compass/sass/app.scss */
 .block-search {
   width: 80%;
   margin: 0 auto;
   padding-top: 25px;
 }
-/* line 116, ../compass/sass/app.scss */
+/* line 127, ../compass/sass/app.scss */
 .block-search .input-group-addon {
   background: #FFE000;
   color: #FFF;
+}
+
+/** social-network **/
+/* line 134, ../compass/sass/app.scss */
+.social-network {
+  text-align: center;
+  padding: 0 0 0 0;
+  margin: 30px 0px 30px 0px;
+}
+/* line 140, ../compass/sass/app.scss */
+.social-network li {
+  list-style: none;
+  display: inline-block;
+  margin: 0px 10px 0px 10px;
+}
+/* line 146, ../compass/sass/app.scss */
+.social-network a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: #F00;
+}
+/* line 153, ../compass/sass/app.scss */
+.social-network .icon-mixcloud {
+  background: url("../img/icon-mixcloud.png");
+}
+/* line 156, ../compass/sass/app.scss */
+.social-network .icon-soundcoud {
+  background: url("../img/icon-soundcloud.png");
+}
+/* line 159, ../compass/sass/app.scss */
+.social-network .icon-facebook {
+  background: url("../img/icon-facebook.png");
 }

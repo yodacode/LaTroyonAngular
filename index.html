@@ -1,15 +1,19 @@
 <html>
 <head>
 	<title>LaTroyon</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 	<link rel="stylesheet" type="text/css" href="js/libs/bootstrap/dist/css/bootstrap.min.css">
   	<link rel="stylesheet" type="text/css" href="css/app.css">
   	<link rel="stylesheet" type="text/css" href="css/player.css">
   	<link rel="stylesheet" type="text/css" href="css/loader.css">
+	<link rel="stylesheet" type="text/css" href="css/mpc.css">
 	<link rel="stylesheet" type="text/css" href="css/animation.css">
 	
 	<link rel="stylesheet" type="text/css" href="js/libs/animate.css/animate.min.css">
 
 	<script src="js/libs/jquery/dist/jquery.js"></script>
+	<script src="js/mpc/mpc.js"></script>
 
 	<!-- ANGULAR -->
 	<script src="js/libs/angularjs/angular.js"></script>
@@ -22,6 +26,7 @@
 	<!-- controllers -->
   	<script src="js/app/controllers/trackControllers.js"></script>
 	<script src="js/app/controllers/playerControllers.js"></script>
+	<script src="js/app/controllers/menuControllers.js"></script>
 	<!-- animations -->
 	<script src="js/app/animations.js"></script>
 
@@ -29,6 +34,41 @@
 	<script src="js/app/app.js"></script>
 </head>
 <body ng-app="latroyonApp">
-	<div ng-view></div>
+
+	<header class="hero night">
+	
+	    <div class="logo"></div>
+		<div class="block-player" ng-controller="playerCtrl" ng-show="isPlayerDisplay">
+			<div class="track-title">{{name}}</div>
+			<div class="progress-bar progress-bar-slider">
+				<input class="progress-slider" type="range" min="0" max="100" step="0.01" ng-model="trackPercent" ng-model="currentTimeSecond" ng-mousedown="pause()" ng-mouseup="resume()">
+				<div class="inner" ng-style="{ width: trackPercent + '%' || '0%' }"></div>
+			</div>
+			<div class="player-controls">
+				<div class="current-time">{{currentTime}}</div>
+				<div class="total-time">{{totalTime}}</div>
+				<div ng-if="isLoading" class="player-loader">
+					<div id="bowlG">
+						<div id="bowl_ringG">
+							<div class="ball_holderG">
+								<div class="ballG">
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<span class="loader-text">Chargement...</span>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container menu-container" ng-controller="menuCtrl">
+		<a href="/#/" ng-class="{ active: isActive('/')}" class="btn btn-default">Home</a>
+		<a href="/#/contact" ng-class="{ active: isActive('/contact')}" class="btn btn-default">Contact</a>
+		<a href="/#/" class="btn btn-default mpc-btn">MPC</a>
+	</div>
+	<div ng-view class="animated zoomer"></div>
+	<div class="mpc" id="mpc"></div>
+</div>
 </body>
 </html>

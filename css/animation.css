@@ -1,6 +1,6 @@
 /* line 3, ../compass/sass/animation.scss */
 .animated.ng-enter, .animated.ng-leave {
-  -webkit-animation-duration: 0.5s;
+  -webkit-animation-duration: 1s;
   -webkit-animation-fill-mode: both;
 }
 
@@ -15,11 +15,21 @@
 }
 
 /* line 16, ../compass/sass/animation.scss */
-.roll.ng-enter {
+.bouncer.ng-enter {
   -webkit-animation-name: bounceInDown;
 }
 
 /* line 20, ../compass/sass/animation.scss */
-.roll.ng-leave {
+.bouncer.ng-leave {
   -webkit-animation-name: bounceOutUp;
+}
+
+/* line 25, ../compass/sass/animation.scss */
+.zommer.ng-enter {
+  -webkit-animation-name: bounceInLeft;
+}
+
+/* line 29, ../compass/sass/animation.scss */
+.zoomer.ng-leave {
+  -webkit-animation-name: bounceOutRight;
 }

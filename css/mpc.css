@@ -1,0 +1,84 @@
+/** MPC **/
+/* line 2, ../compass/sass/mpc.scss */
+.mpc {
+  background: #3D3D3D;
+  width: 495px;
+  height: 395px;
+  border-radius: 5px;
+  position: absolute;
+  top: -800px;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+/* line 15, ../compass/sass/mpc.scss */
+.mpc-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  opacity: 0.5;
+  z-index: 1;
+  display: none;
+}
+
+/* line 25, ../compass/sass/mpc.scss */
+.mpc-keyboard {
+  position: absolute;
+  left: -2px;
+  top: 10px;
+}
+
+/* line 31, ../compass/sass/mpc.scss */
+.mpc-keyboard-key {
+  width: 100px;
+  margin: 5px;
+  height: 80px;
+  display: inline-block;
+  font-family: Arial, "Helvetica", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #B1B1B1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 6px;
+  left: 30px;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  background: #E9E9E9;
+  background-image: linear-gradient(bottom, #0e89b6 0%, #16b3ec 100%);
+  border-radius: 5px;
+  box-shadow: inset 0px 1px 0px #5A5A5A, 0px 5px 0px 0px #707070, 0px 10px 5px #000;
+}
+
+/* line 54, ../compass/sass/mpc.scss */
+.mpc-keyboard-key:active, .mpc-keyboard-key.active {
+  top: 3px;
+  box-shadow: inset 0px 1px 0px #FFFFFF, 0px 2px 0px 0px #969696, 0px 5px 3px #000;
+}
+
+/* line 59, ../compass/sass/mpc.scss */
+.mpc-keyboard-key:before {
+  font-size: 50px;
+  line-height: 1em;
+  font-weight: normal;
+  color: #fff;
+  width: 85px;
+  height: 90px;
+  display: block;
+  position: absolute;
+  padding-top: 10px;
+  top: 10px;
+  text-shadow: 1px 1px 2px #07526e;
+}
+
+/* line 73, ../compass/sass/mpc.scss */
+.mpc-keyboard-key:active:before {
+  top: 7px;
+  font-size: 50px;
+  text-shadow: 0px 3px 0px #07526e, 0px 5px 1px #07526e;
+}

@@ -1,35 +1,7 @@
-<header class="hero night">
-    <div class="logo"></div>	
-	<div class="block-player" ng-controller="playerCtrl" ng-show="isPlayerDisplay">
-		<div class="track-title">{{name}}</div>		
-		<div class="progress-bar progress-bar-slider">
-			<input class="progress-slider" type="range" min="0" max="100" step="0.01" ng-model="trackPercent" ng-model="currentTimeSecond" ng-mousedown="pause()" ng-mouseup="resume()">
-			<div class="inner" ng-style="{ width: trackPercent + '%' || '0%' }"></div>
-		</div>
-		<div class="player-controls">			
-			<div class="current-time">{{currentTime}}</div>
-			<div class="total-time">{{totalTime}}</div>
-			<div ng-if="isLoading" class="player-loader">
-				<div id="bowlG">
-					<div id="bowl_ringG">
-						<div class="ball_holderG">
-							<div class="ballG">
-
-							</div>
-						</div>
-					</div>
-				</div>
-				<span class="loader-text">Chargement...</span>
-			</div>			
-		</div>
-
-	</div>
-</header>
-
 <div class="container-fluid">
 
 	<div class="block-search">
-		<form class="form-horizontal" role="form" 
+		<form class="form-horizontal" role="form">
 			<div class="form-group form-group-lg">
 				<div class="input-group">
 		    		<input class="form-control" type="text" placeholder="Rechercher... Filtrer..." ng-model="query">
@@ -39,18 +11,18 @@
 		</form>
 	</div>
 
-<ul class="tracks-container" ng-controller="TrackListCtrl">
-  	<li ng-repeat="track in tracks | filter:query" class="track-thumb {{track.colorClass}} animated fliper"
-    	ng-mouseenter="hover = true"
-    	ng-mouseleave="hover = false">
+	<ul class="tracks-container" ng-controller="TrackListCtrl">
+	  	<li ng-repeat="track in tracks | filter:query" class="track-thumb {{track.colorClass}} animated fliper"
+	    	ng-mouseenter="hover = true"
+	    	ng-mouseleave="hover = false">
 
-    	<img ng-src="{{track.img}}" class="track-cover img-circle" ng-class="{red: hover}"/>
-    	<a href="#" class="track-title">{{track.name}}</a>
-    	<p class="track-category">{{track.category}}</p>
+	    	<img ng-src="{{track.img}}" class="track-cover img-circle" ng-class="{red: hover}"/>
+	    	<a href="#" class="track-title">{{track.name}}</a>
+	    	<p class="track-category">{{track.category}}</p>
 
-    	<div class="btn btn-play animated roll" ng-if="hover" ng-click="initPlayer({name: track.name, stream: track.stream, length: track.length})">Play <span class="glyphicon glyphicon-play"></span></div>
-	</li>
-</ul>
-<!-- ng-click="initPlayer({stream: track.stream, name: track.name});" -->
+	    	<div class="btn btn-play animated bouncer" ng-if="hover" ng-click="initPlayer({name: track.name, stream: track.stream, length: track.length})">Play <span class="glyphicon glyphicon-play"></span></div>
+		</li>
+	</ul>
+	<!-- ng-click="initPlayer({stream: track.stream, name: track.name});" -->
 
 </div>
